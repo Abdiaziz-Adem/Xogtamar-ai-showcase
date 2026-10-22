@@ -1,0 +1,102 @@
+{
+  "data_kind": "synthetic demonstration fixtures; not real measurements",
+  "solar": {
+    "columns": [
+      {
+        "name": "Solar power (W)",
+        "type": "float64",
+        "missing": 1,
+        "count": 4.0,
+        "mean": 1300.0,
+        "std": 258.19888974716116,
+        "min": 1000.0,
+        "25%": 1150.0,
+        "50%": 1300.0,
+        "75%": 1450.0,
+        "max": 1600.0
+      }
+    ],
+    "statistics": [
+      {
+        "operation": "min",
+        "column": "Solar power (W)",
+        "observations": 4,
+        "missing": 1,
+        "value": 1000.0,
+        "unit": "source units"
+      },
+      {
+        "operation": "max",
+        "column": "Solar power (W)",
+        "observations": 4,
+        "missing": 1,
+        "value": 1600.0,
+        "unit": "source units"
+      },
+      {
+        "operation": "mean",
+        "column": "Solar power (W)",
+        "observations": 4,
+        "missing": 1,
+        "value": 1300.0,
+        "unit": "source units"
+      },
+      {
+        "operation": "sum",
+        "column": "Solar power (W)",
+        "observations": 4,
+        "missing": 1,
+        "value": 5200.0,
+        "unit": "source units"
+      },
+      {
+        "operation": "trend",
+        "column": "Solar power (W)",
+        "observations": 4,
+        "missing": 1,
+        "value": 600.0,
+        "unit": "source units",
+        "method": "Last minus first valid observation in row order; not a rate."
+      }
+    ],
+    "energy": {
+      "operation": "energy",
+      "column": "Solar power (W)",
+      "observations": 4,
+      "missing": 1,
+      "value": 0.0003055555555555556,
+      "unit": "kWh",
+      "method": "Trapezoidal integration of adjacent valid samples; no extrapolation.",
+      "covered_seconds": 1.0,
+      "excluded_intervals": 3,
+      "partial": true,
+      "power_unit": "W",
+      "max_gap_seconds": 2
+    }
+  },
+  "business": {
+    "average_revenue": {
+      "operation": "mean",
+      "column": "Revenue",
+      "observations": 5,
+      "missing": 0,
+      "value": 1143.0,
+      "unit": "source units"
+    },
+    "units": [
+      {
+        "name": "Units",
+        "type": "float64",
+        "missing": 1,
+        "count": 4.0,
+        "mean": 7.0,
+        "std": 3.9157800414902435,
+        "min": 3.0,
+        "25%": 4.5,
+        "50%": 6.5,
+        "75%": 9.0,
+        "max": 12.0
+      }
+    ]
+  }
+}
